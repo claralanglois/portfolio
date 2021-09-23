@@ -5,7 +5,7 @@ window.addEventListener('resize', () => {
 })
 window.addEventListener("orientationChange", () => {
   location.reload()});
-window.addEventListener('load', () => {
+
   const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
    direction: 'horizontal',
@@ -73,7 +73,7 @@ aLinks.forEach(item => {item.addEventListener("mouseleave", function() {
       });
     })
   })
-});
+
 //------------------------------ dragable images ------------------------------
 // external js: draggabilly.pkgd.js
 // get all draggie elements
