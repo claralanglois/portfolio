@@ -29,13 +29,7 @@ $('.rotateScroll').css('transform', 'rotate(' +  instance.scroll.x/2 + 'deg)' )
 //load img when in viewport
 let imgToLoad = document.querySelectorAll(".draggable");
 
-scroll.on("call", (value, way, obj) => {
-  if (value === "loadImg") {
-   imgToLoad.forEach((element) => { element.src = element.dataset.src} ) 
 
-  }
-
-});
 //------------------------------ menu toggle ------------------------------
 const menuToggle = document.querySelector("a.menu-toggle");
 const fakeBack = document.querySelector(".fake-back");
