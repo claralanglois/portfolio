@@ -84,6 +84,7 @@
           <hr>
           <h2>développeuse web jr</h2>
         </div>
+
         <div>
           <br><br>
           <p class="introduction">
@@ -116,7 +117,11 @@
               Hornu, Museum für Gestaltung Zürich, Lantarenvenster, IFFR, Museumnacht Amsterdam 2019 </p>
           </div>
         </article>
-        <img src="./assets/images/botanica/open.png" alt="project_clara_langlois">
+        <picture>
+          <source type="image/webp" srcset="assets/images/botanica/open.webp">
+          <source type="image/png" srcset="assets/images/botanica/open.png">
+          <img src="open.png" alt="">
+        </picture>
         <p class="description-project">
           Botanica Variegata crée un système de classification et de taxonomie des plantes, en fonction de leur présence
           en ligne sur Instagram.
@@ -127,10 +132,22 @@
           plus son score est élevé.
         </p>
         <div class="container-aligned-items">
-          <img class="capture" src="./assets/images/botanica/capture.png" alt="extrait video botanica variegata">
-          <img class="capture" src="./assets/images/botanica/capture2.png" alt="extrait video botanica variegata">
+          <picture>
+            <source type="image/webp" srcset="assets/images/botanica/capture.webp">
+            <source type="image/png" srcset="assets/images/botanica/capture.png">
+            <img class="capture" src="capture.png" alt="extrait video botanica variegata">
+          </picture>
+          <picture class="capture">
+            <source type="image/webp" srcset="assets/images/botanica/capture2.webp">
+            <source type="image/png" srcset="assets/images/botanica/capture2.png">
+            <img class="capture" src="capture2.png" alt="extrait video botanica variegata">
+          </picture>
         </div>
-        <img class="show" src="./assets/images/botanica/show.jpg" alt="installation">
+        <picture>
+          <source type="image/webp" srcset="assets/images/botanica/show.webp">
+          <source type="image/jpg" srcset="assets/images/botanica/show.jpg">
+          <img class="show" src="./assets/images/botanica/show.jpg" alt="installation">
+        </picture>
       </div>
     </section>
     <section class="project" id="algo">
