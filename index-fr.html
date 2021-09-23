@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clara Langlois
+  </title>
+  <link rel="icon" href="./assets/images/svg/fav2.png" />
+  <link rel='stylesheet' href='https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.css' />
+  <link rel='stylesheet' href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/dvc1xoh.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+
+<body>
+
+  <div class="navigation">
+    <div class="menu">
+      <div id="dots-wrapper">
+        <div><img class="rotateScroll" src="assets/images/svg/fav.png" alt="viewport position indicator"></div>
+        <div><img class="rotateScroll" src="assets/images/svg/fav.png" alt="viewport position indicator"></div>
+        <div><img class="rotateScroll" src="assets/images/svg/fav.png" alt="viewport position indicator"></div>
+      </div>
+      <a href="#" class="menu-toggle">
+        <span>Menu</span>
+        <div class="bg-burger">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="10" width="28" height="4" fill="black" class="burger-top"></rect>
+            <rect x="6" y="18" width="28" height="4" fill="black" class="burger-mid"></rect>
+            <rect x="6" y="26" width="28" height="4" fill="black" class="burger-bottom"></rect>
+          </svg>
+        </div>
+      </a>
+      <div class="language">
+        <a href="index.html">en</a>
+        <hr style="width:100%">
+        <a href="index-fr.html">fr</a>
+      </div>
+    </div>
+    <nav class="fake-back"></nav>
+    <nav class="fake-mid"></nav>
+    <nav id="menu">
+      <div class="container-menu">
+        <div class="portfolio">
+          <a data-name="botanica" data-number="1" class="hover"
+            data-sub="Recherche <br> Installation artistique">Botanica
+            Variegata</a>
+          <a data-name="algo" data-number="2" data-sub="Programmation <br> Installation artistique"
+            class="hover">ἀρῐθμός</a>
+          <a data-name="playground" data-number="3" data-sub="Développement <br> Website" class="hover">Code
+            Playground</a>
+          <a data-name="anim" data-number="4" data-sub="Code <br> Animation" class="hover">Javascript
+            animation</a>
+          <a data-name="video" data-number="5"
+            data-sub="Direction <br> Film & Animation <br> <i>Page en cours de création</i>" class="hover">Vidéo
+            Playground</a>
+          <p id="menu-caption"></p>
+        </div>
+        <div class="canvas-holder">
+          <canvas></canvas>
+        </div>
+        <div class="title">
+          <div>
+            <h1 class="title_color">portfolio</h1>
+            <hr data-scroll data-scroll-speed="3">
+            <h2>2018 <span style="font-size:1.5rem;">•</span> 2021</h2>
+            <a class="arrow-links" target="_blank" href="https://langloks.github.io/cv/">curiculum vitae <img
+                src="assets/images/svg/arrow.svg" alt="arrow link for cv"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <main class="horizontal" data-scroll-container="horizontal" id="flex-container">
+    <section id="intro">
+      <div class="img-container"></div>
+      <div class="intro">
+        <div class="titles">
+          <h1 class="title_color">Clara Langlois</h1>
+          <hr>
+          <h2>développeuse web jr</h2>
+        </div>
+        <div>
+          <br><br>
+          <p class="introduction">
+            Développeuse et Designer versatile passionnée par l'IA, les systems interactifs et la programmation. </p>
+        </div>
+      </div>
+    </section>
+    <section class="project" id="botanica">
+      <h1 class="stage" data-scroll data-scroll-speed="-1"><span>Je recherche un stage </span>Je recherche un stage
+        <span>Je recherche un stage </span>Je recherche un stage
+      </h1>
+      <div class="container-project">
+        <article>
+          <div>
+            <h1 data-scroll data-scroll-speed="-1">Botanica Variegata </h1>
+            <!-- <hr data-scroll data-scroll-speed="-1"> -->
+            <h2 data-scroll data-scroll-speed="-1">2019</h2>
+          </div>
+          <div>
+            <h3 data-scroll data-scroll-speed="1">Discipline</h3>
+            <p>Computer vision
+              Installation artistique</p>
+            <h3 data-scroll data-scroll-speed="1">Missions</h3>
+            <p>recherche<br>
+              production<br>
+              assistance direction artistique </p>
+            <p>Botanica Variegata est une initiative du collectif Aesthetics of Exclusion de Sjoerd ter Borg regroupant
+              artistes, developpeurs, chercheurs et designers</p>
+            <p>L’installation à été imaginé pour la semaine du design de Milan, Alcova Sassetti puis exposé au CID Grand
+              Hornu, Museum für Gestaltung Zürich, Lantarenvenster, IFFR, Museumnacht Amsterdam 2019 </p>
+          </div>
+        </article>
+        <img src="./assets/images/botanica/open.png" alt="project_clara_langlois">
+        <p class="description-project">
+          Botanica Variegata crée un système de classification et de taxonomie des plantes, en fonction de leur présence
+          en ligne sur Instagram.
+          Une structure algorithmique analyse des dizaines de milliers d'images de plantes en relation avec leur
+          environnement - allant de chats, chiens, couleurs, objets de design ou art. Dans l'exposition, différentes
+          espèces, ordres et familles de plantes sont en compétition les unes avec les autres grâce à un système spécial
+          qui évalue, favorise et valorise le cadre photographique;<br><br>Plus le contexte de la plante est homogène,
+          plus son score est élevé.
+        </p>
+        <div class="container-aligned-items">
+          <img class="capture" src="./assets/images/botanica/capture.png" alt="extrait video botanica variegata">
+          <img class="capture" src="./assets/images/botanica/capture2.png" alt="extrait video botanica variegata">
+        </div>
+        <img class="show" src="./assets/images/botanica/show.jpg" alt="installation">
+      </div>
+    </section>
+    <section class="project" id="algo">
+      <div class="container-project">
+        <article>
+          <div>
+            <a href="https://claralanglois.cargo.site/">
+              <h1 data-scroll data-scroll-speed="1">ἀρῐθμός</h1>
+            </a>
+            <h2 data-scroll data-scroll-speed="1">2020</h2>
+          </div>
+          <div>
+            <h3>Discipline</h3>
+            <p>Computer vision
+              Installation artistique</p>
+            <h3>Missions</h3>
+            <p>Recherche<br>
+              Dévelopment<br>
+              TensorFlow keras Python HTML CSS JavaScript</p>
+            <a class="arrow-links" target="_blank" href="https://claralanglois.cargo.site/">Visiter la page web du
+              projet <img src="assets/images/svg/arrow.svg" alt="icon arrow"></a>
+            <p>
+              ἀρῐθμός est une application utilisant des principes de computer vision pour attribuer une valeur à l'art.
+              Les algorithmes sont entraînés sur différents ensembles de données d'où émanent des opinions fortes et
+              contradictoires. À travers une installation mettant en scène le processus de reconnaissance d'image, les
+              biais et
+              inconsistances de l'IA sont aborder et mis en scène.</p>
+            <p>Graduation Show Gerrit Rietveld Academie 2020</p>
+          </div>
+        </article>
+        <div class="container-draggable">
+          <img src="./assets/images/algo/img1.png" alt="img project algorythm" class="draggable">
+          <img src="./assets/images/algo/img2.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img3.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img4.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img5.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img6.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img7.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img8.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img9.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img10.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img11.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img12.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img13.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img14.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img15.png" alt="img project algorythm" class="draggable"><img
+            src="./assets/images/algo/img16.png" alt="img project algorythm" class="draggable">
+        </div>
+      </div>
+    </section>
+    <section class="project" id="playground">
+      <div class="container-project">
+        <article>
+          <div>
+            <h1 data-scroll data-scroll-speed="1">playground</h1>
+            <h2 data-scroll data-scroll-speed="1">2021</h2>
+          </div>
+          <div>
+            <h3>Technologies</h3>
+            <p>HTML SASS BOOTSRAP JAVASCRIPT JQUERY CANVAS AJAX API GASP</p>
+          </div>
+
+          <br>
+          <p>Divers sites créer pour pratiquer et expérimenter</p>
+          <ul>
+            <li><a class="arrow-links" target="_blank" href="https://langloks.github.io/black-canvas/">Black
+                CANVAS<img src="assets/images/svg/arrow.svg" alt="arrow icon"></a></li>
+            <li><a class="arrow-links" target="_blank" href="https://langloks.github.io/quotes-api/">Hands on AJAX+API
+                with SuperHi<img src="assets/images/svg/arrow.svg" alt="arrow icon"> </a></li>
+            <li><a class="arrow-links" target="_blank" href="https://langloks.github.io/projetBeautyJquery/">e-shop
+                JQUERY, projet de groupe<img src="assets/images/svg/arrow.svg" alt="arrow icon"></a></li>
+            <li><a class="arrow-links" target="_blank"
+                href="https://langloks.github.io/exo-conjugaison-kate/">JAVASCRIPT conjugaison test<img
+                  src="assets/images/svg/arrow.svg" alt="arrow icon"></a></li>
+            <li><a class="arrow-links" target="_blank" href="https://visril.netlify.app/">BOOTSTRAP website for
+                VISRIL<img src="assets/images/svg/arrow.svg" alt="arrow icon"></a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section class="project" id="anim">
+      <div class="container-project">
+        <article id="artanim">
+          <div>
+            <h1 data-scroll data-scroll-speed="1">Animation</h1>
+            <h2 data-scroll data-scroll-speed="1">2021</h2>
+          </div>
+          <div>
+            <h3>Technologies</h3>
+            <p>After effect expressions utilisées pour animer</p>
+          </div>
+        </article>
+        <div class="slides">
+          <div id="left"></div>
+          <div id="right"></div>
+          <img src="" alt="animated gif" id="gif">
+        </div>
+      </div>
+    </section>
+    <div class="breather"></div>
+  </main>
+  <!-- CDN  -->
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+    integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <!-- lettering -->
+  <script src="assets/js/jquery.lettering-0.6.1.min.js"></script>
+  <!-- Draggabilly -->
+  <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+  <!-- Navigation scripts GLSL -->
+  <script src="https://cdn.jsdelivr.net/npm/glslCanvas@0.1.7/dist/GlslCanvas.min.js"></script>
+  <script src="assets/js/includes.js"></script>
+  <script src="assets/js/frag.js"></script>
+  <!-- General script javascript/jquery-->
+  <script src="assets/js/imageadder.min.js"></script>
+  <script src="assets/js/script.min.js"></script>
+  <script src="assets/js/slides.min.js"></script>
+
+
+</body>
+
+</html>
