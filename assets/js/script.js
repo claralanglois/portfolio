@@ -3,6 +3,10 @@ window.addEventListener('resize', () => {
 })
 window.addEventListener("orientationChange", () => {
   location.reload()});
+
+
+
+
 window.addEventListener('load', () => {
   const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
@@ -20,6 +24,17 @@ scroll.scrollTo(target);
 //----------------------rotation color circle on scroll ---------------------
 scroll.on('scroll', (instance) => {
 $('.rotateScroll').css('transform', 'rotate(' +  instance.scroll.x/2 + 'deg)' )
+});
+
+//load img when in viewport
+let imgToLoad = document.querySelectorAll(".draggable");
+
+scroll.on("call", (value, way, obj) => {
+  if (value === "loadImg") {
+   imgToLoad.forEach((element) => { element.src = element.dataset.src} ) 
+
+  }
+
 });
 //------------------------------ menu toggle ------------------------------
 const menuToggle = document.querySelector("a.menu-toggle");
@@ -101,11 +116,4 @@ window.addEventListener('load', () => {
 })
 });
 
-document.onreadystatechange = () => {
-  if (document.readyState === 'interactive') {
-   console.log("interactive")
-  }
-  if (document.readyState === 'complete') {
-    console.log("complete")
-   }
-};
+
