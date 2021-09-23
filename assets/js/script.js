@@ -100,3 +100,12 @@ window.addEventListener('load', () => {
     $(this).css('top', Math.floor((Math.random()*bodyHeight)))
 })
 });
+
+document.onreadystatechange = () => {
+  if (document.readyState === 'interactive') {
+   console.log("interactive")
+  }
+  if (document.readyState === 'complete') {
+    console.log("complete")
+   }
+};
