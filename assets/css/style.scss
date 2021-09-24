@@ -698,6 +698,7 @@ margin-left: -8vw;
 
 
   #left{
+    z-index: 10;
     background-color: #A4BCFF;
     height: 100%;
     width: 50%;
@@ -708,6 +709,7 @@ margin-left: -8vw;
  
   }
   #right{
+    z-index: 10;
     background-color:#B5B507;
     height: 100%;
     width: 50%;

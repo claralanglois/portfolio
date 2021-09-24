@@ -58,15 +58,18 @@ window.addEventListener("resize", function () {
 const left = document.getElementById('left')
 const right = document.getElementById('right')
 let imageIndex = 0
- let gifList = ['anim1.gif', 'anim2.gif', 'anim3.gif', 'anim4.gif', 'anim5.gif', 'anim6.gif']
+ let gifList = ['anim1w.webm', 'anim2w.webm', 'anim3w.webm', 'anim4w.webm', 'anim5w.webm', 'anim6w.webm']
 left.addEventListener('click', function() {
   if(imageIndex > 0 ){imageIndex -= 1}  
 else if(imageIndex == 0){imageIndex = gifList.length -1}
 document.getElementById('gif').src = `assets/animation/${gifList[imageIndex]}`
+document.getElementById('gif').play()
 })
 right.addEventListener('click', function() {
   if(imageIndex == gifList.length-1){imageIndex = 0}  
 else  {imageIndex += 1}
 document.getElementById('gif').src = `assets/animation/${gifList[imageIndex]}`
+document.getElementById('gif').play()
 })
 document.getElementById('gif').src = `assets/animation/${gifList[imageIndex]}`
+document.getElementById('gif').play()
