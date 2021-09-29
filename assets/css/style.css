@@ -860,7 +860,7 @@ h1.stage span {
 
 @media (min-width: 1200px) {
   .project .container-project .description-project {
-    width: 20vw;
+    width: 30vw;
   }
 }
 
